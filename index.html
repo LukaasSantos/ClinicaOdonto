@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Odontológica Sorriso Perfeito - Agende sua consulta via WhatsApp em segundos">
+    <meta name="keywords" content="dentista, clínica odontológica, agendamento whatsapp, sorriso, saúde bucal">
+    <title>Clínica Sorriso Perfeito | Agende via WhatsApp</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#00D9FF">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%2300D9FF'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Arial' font-size='96' fill='white'%3E%F0%9F%A6%B7%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- WhatsApp Flutuante -->
+    <div class="whatsapp-float" data-aos="fade-left" data-aos-delay="1000">
+        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta na Clínica Sorriso Perfeito." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-tooth text-primary"></i> Sorriso Perfeito
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-whatsapp-nav" href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank">
+                            <i class="fab fa-whatsapp"></i> Agendar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Transforme seu Sorriso em Segundos
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Agende sua consulta odontológica via WhatsApp e conquiste o sorriso dos seus sonhos. 
+                        Rápido, prático e sem filas!
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta na Clínica Sorriso Perfeito." 
+                           class="btn btn-primary btn-lg whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i> Agendar Agora
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg ">
+                            Conheça Serviços
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <small class="text-white-50">
+                            <i class="fas fa-clock me-1"></i> Atendimento 24/7 via WhatsApp
+                        </small>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="https://picsum.photos/seed/dentista1/1000/600.jpg" 
+                             alt="Dentista profissional" class="img-fluid rounded-4 shadow-lg"
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 600\'%3E%3Crect width=\'1000\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' font-size=\'24\' fill=\'%23666\'%3EDentista Profissional%3C/text%3E%3C/svg%3E'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Nossos Serviços</h2>
+                <p class="lead text-muted">Tudo que seu sorriso precisa em um só lugar</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-tooth fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Limpeza</h5>
+                            <p class="card-text text-muted">Profilaxia completa para remover placa bacteriana e tártaro</p>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma limpeza." 
+                               class="btn btn-outline-primary btn-sm" target="_blank">
+                                Agendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-magic fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Clareamento</h5>
+                            <p class="card-text text-muted">Técnica avançada para deixar seu sorriso mais branco</p>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar um clareamento." 
+                               class="btn btn-outline-primary btn-sm" target="_blank">
+                                Agendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Implantes</h5>
+                            <p class="card-text text-muted">Solução definitiva para substituir dentes perdidos</p>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre implantes." 
+                               class="btn btn-outline-primary btn-sm" target="_blank">
+                                Agendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card service-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-child fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Odontopediatria</h5>
+                            <p class="card-text text-muted">Cuidado especial para o sorriso das crianças</p>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar para meu filho(a)." 
+                               class="btn btn-outline-primary btn-sm" target="_blank">
+                                Agendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="https://picsum.photos/seed/clinica2/1000/600.jpg" 
+                         alt="Clínica moderna" class="img-fluid rounded-4 shadow"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 600\'%3E%3Crect width=\'1000\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' font-size=\'24\' fill=\'%23666\'%3EClínica Moderna%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="display-5 fw-bold mb-4">Por que escolher a Sorriso Perfeito?</h2>
+                    <div class="feature-list">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Agendamento Instantâneo</h6>
+                                <p class="text-muted mb-0">Converse diretamente com nosso time via WhatsApp</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Tecnologia Avançada</h6>
+                                <p class="text-muted mb-0">Equipamentos modernos para seu conforto</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Profissionais Qualificados</h6>
+                                <p class="text-muted mb-0">Equipe especializada e atualizada</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6>Atendimento Humanizado</h6>
+                                <p class="text-muted mb-0">Cuidado personalizado para cada paciente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de conhecer melhor a clínica." 
+                       class="btn btn-primary btn-lg mt-3" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i> Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">O que dizem nossos pacientes</h2>
+                <p class="lead text-muted">Satisfação garantida em cada sorriso</p>
+            </div>
+            
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                <!-- Indicators -->
+                <div class="carousel-indicators mb-4">
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>
+                </div>
+                
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10">
+                                <div class="card testimonial-card border-0 shadow-sm">
+                                    <div class="card-body p-4 p-md-5 text-center">
+                                        <div class="stars mb-4">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text fs-5 mb-4">"Atendimento excelente! Agendei pelo WhatsApp e em minutos já tinha minha consulta confirmada. Super recomendo!"</p>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://picsum.photos/seed/paciente1/60/60.jpg" alt="Paciente" class="rounded-circle me-3"
+                                                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 60 60\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'30\' fill=\'%23ddd\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' font-size=\'18\' fill=\'white\'%3EMS%3C/text%3E%3C/svg%3E'">
+                                            <div class="text-start">
+                                                <h6 class="mb-0 fw-bold">Maria Silva</h6>
+                                                <small class="text-muted">Paciente</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10">
+                                <div class="card testimonial-card border-0 shadow-sm">
+                                    <div class="card-body p-4 p-md-5 text-center">
+                                        <div class="stars mb-4">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text fs-5 mb-4">"A praticidade de agendar pelo WhatsApp mudou minha experiência. Profissionais incríveis e ambiente acolhedor!"</p>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://picsum.photos/seed/paciente2/60/60.jpg" alt="Paciente" class="rounded-circle me-3"
+                                                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 60 60\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'30\' fill=\'%23ddd\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' font-size=\'18\' fill=\'white\'%3EJS%3C/text%3E%3C/svg%3E'">
+                                            <div class="text-start">
+                                                <h6 class="mb-0 fw-bold">João Santos</h6>
+                                                <small class="text-muted">Paciente</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10">
+                                <div class="card testimonial-card border-0 shadow-sm">
+                                    <div class="card-body p-4 p-md-5 text-center">
+                                        <div class="stars mb-4">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <p class="card-text fs-5 mb-4">"Melhor clínica que já frequentei! O agendamento pelo WhatsApp é super prático e o atendimento é impecável."</p>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="https://picsum.photos/seed/paciente3/60/60.jpg" alt="Paciente" class="rounded-circle me-3"
+                                                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 60 60\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'30\' fill=\'%23ddd\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' font-size=\'18\' fill=\'white\'%3EAC%3C/text%3E%3C/svg%3E'">
+                                            <div class="text-start">
+                                                <h6 class="mb-0 fw-bold">Ana Costa</h6>
+                                                <small class="text-muted">Paciente</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <h2 class="display-5 fw-bold text-white mb-4">
+                        Pronto para transformar seu sorriso?
+                    </h2>
+                    <p class="lead text-white mb-4">
+                        Agende sua consulta agora mesmo via WhatsApp e garanta um atendimento especializado
+                    </p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar minha consulta na Clínica Sorriso Perfeito." 
+                       class="btn btn-light btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp me-2 text-success"></i> Agendar Consulta
+                    </a>
+                    <div class="mt-3">
+                        <small class="text-white-50">
+                            <i class="fas fa-bolt me-1"></i> Resposta em até 5 minutos
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-tooth text-primary me-2"></i>Clínica Sorriso Perfeito</h5>
+                    <p class="text-muted">Transformando vidas através do sorriso</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://wa.me/5511999999999" class="text-white me-3" target="_blank">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 bg-secondary">
+            <div class="text-center">
+                <small>&copy; 2024 Clínica Sorriso Perfeito. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
