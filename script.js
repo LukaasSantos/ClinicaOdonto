@@ -370,11 +370,44 @@ if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js')
             .then(function(registration) {
                 console.log('ServiceWorker registration successful');
+                
+                // Verifica por atualizações do Service Worker
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    console.log('New Service Worker found');
+                    
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            console.log('New Service Worker available, refreshing page');
+                            // Notifica o usuário sobre a atualização
+                            if (confirm('Nova versão disponível! Deseja atualizar agora?')) {
+                                window.location.reload();
+                            }
+                        }
+                    });
+                });
+                
+                // Escuta mensagens do Service Worker
+                navigator.serviceWorker.addEventListener('message', event => {
+                    if (event.data && event.data.type === 'CACHE_UPDATED') {
+                        console.log('Cache updated by Service Worker');
+                        if (confirm('Conteúdo atualizado! Deseja recarregar a página?')) {
+                            window.location.reload();
+                        }
+                    }
+                });
             })
             .catch(function(err) {
                 console.log('ServiceWorker registration failed');
             });
     });
+    
+    // Força verificação de atualizações periodicamente
+    setInterval(() => {
+        if (navigator.serviceWorker.controller) {
+            navigator.serviceWorker.controller.postMessage({ type: 'CHECK_FOR_UPDATES' });
+        }
+    }, 30000); // Verifica a cada 30 segundos
 }
 
 // ======== ERROR HANDLING ========

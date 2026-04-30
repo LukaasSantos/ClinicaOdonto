@@ -1,4 +1,5 @@
-const CACHE_NAME = 'clinica-sorriso-perfeito-v1';
+const CACHE_NAME = 'clinica-sorriso-perfeito-v1.2';
+const CACHE_VERSION = Date.now(); // Força atualização
 const urlsToCache = [
     '/',
     '/index.html',
@@ -29,10 +30,19 @@ self.addEventListener('activate', function(event) {
             return Promise.all(
                 cacheNames.map(function(cacheName) {
                     if (cacheName !== CACHE_NAME) {
+                        console.log('Deleting old cache:', cacheName);
                         return caches.delete(cacheName);
                     }
                 })
             );
+        }).then(function() {
+            console.log('Service Worker activated and cache updated');
+            // Força atualização de todos os clients abertos
+            return self.clients.matchAll();
+        }).then(function(clients) {
+            clients.forEach(function(client) {
+                client.postMessage({ type: 'CACHE_UPDATED' });
+            });
         })
     );
 });
