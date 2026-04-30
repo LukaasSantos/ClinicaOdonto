@@ -115,7 +115,6 @@ html {
     bottom: 30px;
     right: 30px;
     z-index: 1000;
-    animation: pulse 2s infinite;
 }
 
 .whatsapp-float a {
@@ -132,6 +131,8 @@ html {
     transition: var(--transition);
     text-decoration: none;
     position: relative;
+        animation: pulse 2s infinite;
+
 }
 
 .whatsapp-float a:hover {
